@@ -6,13 +6,89 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="380dp"
+            app:srcCompat="@drawable/icons8_help_24" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hi Username"
+            android:textSize="14sp"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome To\nShuttle Smart"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="280dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:text="Shuttle Schedules"
+            android:textColor="@color/black"
+            app:backgroundTint="#F5F3F3"
+            app:icon="@drawable/icons8_timetable_30"
+            app:iconTint="#000000"
+            app:strokeColor="#040404"
+            app:strokeWidth="0.5dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="280dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:text="Driver Profiles"
+            android:textColor="@color/black"
+            app:backgroundTint="#F5F3F3"
+            app:icon="@drawable/icons8_driver_50"
+            app:iconSize="30dp"
+            app:iconTint="#000000"
+            app:strokeColor="#000000"
+            app:strokeWidth="0.5dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="184dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:text="Logout"
+            android:textColor="@color/black"
+            app:backgroundTint="#F5F3F3"
+            app:icon="@drawable/icons8_logout_rounded_30"
+            app:iconTint="#000000"
+            app:strokeColor="#000000"
+            app:strokeWidth="0.5dp" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
