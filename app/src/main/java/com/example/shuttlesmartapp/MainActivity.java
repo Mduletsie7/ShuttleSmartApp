@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "The logout button has been clicked!", Toast.LENGTH_LONG).show();
-               // System.exit(0);
+                System.exit(0);
             }
         });
     }

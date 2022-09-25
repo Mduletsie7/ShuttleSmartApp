@@ -26,18 +26,9 @@
             android:layout_marginTop="10dp">
 
             <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/icons8_back_arrow_30" />
-
-            <ImageView
                 android:id="@+id/imageView8"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -48,7 +39,7 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="25dp"
             android:text="Hi Username"
             android:textColor="@color/black"
@@ -58,12 +49,73 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/lato_bold"
             android:text="Meet Your Drivers"
             android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold" />
+
+        // DRIVER 1 CARD
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="30dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="50dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="117dp"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/avatar1" />
+        </androidx.cardview.widget.CardView>
+
+
+        // DRIVER 2 CARD
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="30dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="50dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="114dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/avatar2" />
+        </androidx.cardview.widget.CardView>
+
+        // DRIVER 3 CARD
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="30dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="50dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="126dp"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/avatar1" />
+        </androidx.cardview.widget.CardView>
+
+
 
     </LinearLayout>
 

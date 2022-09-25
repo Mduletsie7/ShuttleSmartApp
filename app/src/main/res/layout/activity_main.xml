@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:background="@drawable/background"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -32,7 +33,7 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="25dp"
             android:text="Hi Username"
             android:textColor="@color/black"
@@ -42,8 +43,9 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/lato_bold"
             android:text="Welcome To\nShuttle Smart"
             android:textAllCaps="true"
             android:textColor="@color/black"
@@ -53,23 +55,28 @@
         <Button
             android:id="@+id/btnShuttleSchedules"
             android:layout_width="280dp"
-            android:layout_height="64dp"
+            android:layout_height="80dp"
             android:layout_gravity="center"
             android:layout_marginTop="60dp"
+            android:background="#000000"
             android:text="Shuttle Schedules"
             android:textColor="@color/black"
-            app:backgroundTint="#4285F4"
+            app:backgroundTint="#FFFFFF"
+            app:elevation="50dp"
             app:icon="@drawable/icons8_timetable_30"
             app:iconTint="#000000" />
 
         <Button
             android:id="@+id/btnDriverProfiles"
             android:layout_width="280dp"
-            android:layout_height="64dp"
+            android:layout_height="80dp"
             android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="#000000"
             android:text="Driver Profiles"
             android:textColor="@color/black"
-            app:backgroundTint="#4285F4"
+            app:backgroundTint="#FFFFFF"
+            app:elevation="60dp"
             app:icon="@drawable/icons8_driver_50"
             app:iconSize="30dp"
             app:iconTint="#000000" />
@@ -77,12 +84,14 @@
         <Button
             android:id="@+id/btnLogout"
             android:layout_width="184dp"
-            android:layout_height="64dp"
+            android:layout_height="80dp"
             android:layout_gravity="center"
             android:layout_marginTop="80dp"
+            android:background="#000000"
             android:text="Logout"
             android:textColor="@color/black"
-            app:backgroundTint="#4285F4"
+            app:backgroundTint="#FFFFFF"
+            app:elevation="60dp"
             app:icon="@drawable/icons8_logout_rounded_30"
             app:iconTint="#000000" />
 
