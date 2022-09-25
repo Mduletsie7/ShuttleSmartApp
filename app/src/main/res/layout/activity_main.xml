@@ -63,7 +63,7 @@
             app:iconTint="#000000" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnDriverProfiles"
             android:layout_width="280dp"
             android:layout_height="64dp"
             android:layout_gravity="center"
@@ -91,7 +91,7 @@
             android:layout_width="256dp"
             android:layout_height="58dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="60dp"
             app:srcCompat="@drawable/cput_logo" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

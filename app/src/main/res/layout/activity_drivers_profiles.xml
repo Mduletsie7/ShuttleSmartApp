@@ -20,13 +20,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="380dp"
-            android:layout_marginTop="5dp"
-            app:srcCompat="@drawable/icons8_help_24" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icons8_back_arrow_30" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icons8_help_24" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:id="@+id/textView"
@@ -44,43 +60,11 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:text="Let's find your shuttle"
+            android:text="Meet Your Drivers"
             android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            app:srcCompat="@drawable/schedule1" />
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="272dp"
-            android:layout_height="332dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            app:srcCompat="@drawable/schedule_view1" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            app:srcCompat="@drawable/icons8_swipe_32" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Swipe left or right to scroll between timetables"
-            android:textColor="@color/black"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="30dp"
-            />
-
-
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
