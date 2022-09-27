@@ -32,7 +32,7 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="25dp"
             android:text="Hi Username"
             android:textColor="@color/black"
@@ -42,44 +42,19 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="10dp"
             android:text="Let's find your shuttle"
             android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/imageView3"
+        <SearchView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            app:srcCompat="@drawable/schedule1" />
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="272dp"
-            android:layout_height="332dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            app:srcCompat="@drawable/schedule_view1" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            app:srcCompat="@drawable/icons8_swipe_32" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Swipe left or right to scroll between timetables"
-            android:textColor="@color/black"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="30dp"
-            />
 
 
     </LinearLayout>
