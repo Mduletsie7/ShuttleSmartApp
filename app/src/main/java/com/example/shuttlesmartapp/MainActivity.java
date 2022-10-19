@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnShuttleSchedules = findViewById(R.id.btnShuttleSchedules);
         Button btnDriverProfiles = findViewById(R.id.btnDriverProfiles);
         Button btnLogout = findViewById(R.id.btnLogout);
+        Button btnUserFeedback = findViewById(R.id.btnUserFeedback);
 
         btnShuttleSchedules.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,10 +34,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnUserFeedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openDriverProfiles();
+            }
+        });
+
+        btnUserFeedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openUserFeedback();
+            }
+        });
+
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "The logout button has been clicked!", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Farewell & Safe travels!", Toast.LENGTH_LONG).show();
                 System.exit(0);
             }
         });
@@ -49,6 +64,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openDriverProfiles() {
         Intent intent = new Intent(this, DriversProfiles.class);
+        startActivity(intent);
+    }
+
+    public void openUserFeedback() {
+        Intent intent = new Intent(this, UserFeedback.class);
         startActivity(intent);
     }
 }

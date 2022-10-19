@@ -20,13 +20,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="380dp"
-            android:layout_marginTop="5dp"
-            app:srcCompat="@drawable/icons8_help_24" />
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="380dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            app:srcCompat="@drawable/icons8_help_24" />-->
 
         <TextView
             android:id="@+id/textView"

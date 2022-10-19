@@ -21,13 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="380dp"
-            android:layout_marginTop="5dp"
-            app:srcCompat="@drawable/icons8_help_24" />
+
 
         <TextView
             android:id="@+id/textView"
@@ -35,29 +29,42 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="25dp"
-            android:text="Hi Username"
+            android:text="Hi, "
             android:textColor="@color/black"
             android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="Welcome To"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="6dp"
             android:fontFamily="@font/lato_bold"
-            android:text="Welcome To\nShuttle Smart"
+            android:text="Shuttle Smart"
             android:textAllCaps="true"
-            android:textColor="@color/black"
-            android:textSize="34sp"
+            android:textColor="#4285F4"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnShuttleSchedules"
             android:layout_width="280dp"
-            android:layout_height="80dp"
+            android:layout_height="76dp"
             android:layout_gravity="center"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="56dp"
             android:background="#000000"
             android:text="Shuttle Schedules"
             android:textColor="@color/black"
@@ -69,38 +76,53 @@
         <Button
             android:id="@+id/btnDriverProfiles"
             android:layout_width="280dp"
-            android:layout_height="80dp"
+            android:layout_height="76dp"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="26dp"
             android:background="#000000"
-            android:text="Driver Profiles"
+            android:text="About Us"
             android:textColor="@color/black"
             app:backgroundTint="#FFFFFF"
             app:elevation="60dp"
-            app:icon="@drawable/icons8_driver_50"
+            app:icon="@drawable/icons8_about_24"
+            app:iconSize="30dp"
+            app:iconTint="#000000" />
+
+        <Button
+            android:id="@+id/btnUserFeedback"
+            android:layout_width="280dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="26dp"
+            android:background="#000000"
+            android:text="Leave Your Thoughts"
+            android:textColor="@color/black"
+            app:backgroundTint="#FFFFFF"
+            app:elevation="60dp"
+            app:icon="@drawable/feedback"
             app:iconSize="30dp"
             app:iconTint="#000000" />
 
         <Button
             android:id="@+id/btnLogout"
             android:layout_width="184dp"
-            android:layout_height="80dp"
+            android:layout_height="76dp"
             android:layout_gravity="center"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="72dp"
             android:background="#000000"
-            android:text="Logout"
+            android:text="Exit"
             android:textColor="@color/black"
             app:backgroundTint="#FFFFFF"
             app:elevation="60dp"
             app:icon="@drawable/icons8_logout_rounded_30"
             app:iconTint="#000000" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="256dp"
-            android:layout_height="58dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="60dp"
-            app:srcCompat="@drawable/cput_logo" />
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView2"-->
+<!--            android:layout_width="256dp"-->
+<!--            android:layout_height="58dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="60dp"-->
+<!--            app:srcCompat="@drawable/cput_logo" />-->
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
