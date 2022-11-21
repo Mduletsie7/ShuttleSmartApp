@@ -57,6 +57,11 @@
             android:textSize="30sp"
             android:textStyle="bold" />
 
+        <WebView
+            android:id="@+id/AboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
 
     </LinearLayout>
 
