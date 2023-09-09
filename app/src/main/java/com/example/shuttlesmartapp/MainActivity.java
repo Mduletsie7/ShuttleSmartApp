@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,60 +14,43 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnShuttleSchedules = findViewById(R.id.btnShuttleSchedules);
-        Button btnDriverProfiles = findViewById(R.id.btnDriverProfiles);
-        Button btnLogout = findViewById(R.id.btnLogout);
-        Button btnUserFeedback = findViewById(R.id.btnUserFeedback);
+        Button btnManageCustomers = findViewById(R.id.btnManageCustomers);
+        Button btnManageEmployees = findViewById(R.id.btnManageEmployees);
+        Button btnProjects = findViewById(R.id.btnManageProjects);
 
-        btnShuttleSchedules.setOnClickListener(new View.OnClickListener() {
+        btnManageCustomers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openShuttleSchedules();
+                openCustomerManager();
             }
         });
 
-        btnDriverProfiles.setOnClickListener(new View.OnClickListener() {
+        btnManageEmployees.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                openDriverProfiles();
-            }
+            public void onClick(View view) { openEmployeeManager(); }
         });
 
-        btnUserFeedback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openDriverProfiles();
-            }
-        });
+//        btnProjects.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) { openProjectManager(); }
+//        });
 
-        btnUserFeedback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openUserFeedback();
-            }
-        });
-
-        btnLogout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Farewell & Safe travels!", Toast.LENGTH_LONG).show();
-                System.exit(0);
-            }
-        });
     }
 
-    public void openShuttleSchedules() {
-        Intent intent = new Intent(this, ShuttleSchedules.class);
+    public void openCustomerManager() {
+        Intent intent = new Intent(this, CustomerManager.class);
         startActivity(intent);
     }
 
-    public void openDriverProfiles() {
-        Intent intent = new Intent(this, DriversProfiles.class);
+    public void openEmployeeManager() {
+        Intent intent = new Intent(this, EmployeeManager.class);
         startActivity(intent);
     }
 
-    public void openUserFeedback() {
-        Intent intent = new Intent(this, UserFeedback.class);
-        startActivity(intent);
-    }
+//    Create Project Manager class, link it to project manager layout
+
+//    public void openProjectManager() {
+//        Intent intent = new Intent(this, ProjectManager.class);
+//        startActivity(intent);
+//    }
 }
